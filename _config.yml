@@ -1,12 +1,13 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: ROBOMEDON
+email: marija.habijan@ferit.hr
+description: >
+  ROBOMEDON - Machine Learning for Precision Diagnosis and Robotic Surgery in Oncology.
+  A research project funded by the Croatian Science Foundation (HRZZ).
+baseurl: ""
+url: "https://robomedon-ai.github.io"
 
-twitter_username:
-github_username:
+github_username: robomedon-ai
 
 # Build settings
 markdown: kramdown

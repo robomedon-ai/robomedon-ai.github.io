@@ -155,7 +155,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: linear-gradient(rgba($theme-dark, 0.7), rgba($theme-dark, 0.8)), url('../img/header.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -319,6 +319,120 @@ header {
 #contact .fa {
     color: $theme-dark;
     font-size: 4em;
+}
+
+// Header funding text
+.header-funding {
+    font-size: 14px !important;
+    color: rgba(white, .5) !important;
+    font-style: italic;
+}
+
+// Objectives intro
+.objectives-intro {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+// Work Packages
+#workpackages {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.wp-intro {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.wp-row {
+    margin-top: 15px;
+}
+
+.wp-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 15px rgba(0,0,0,.08);
+    min-height: 320px;
+    @include transition-all;
+    &:hover {
+        box-shadow: 0 5px 25px rgba(0,0,0,.15);
+        transform: translateY(-3px);
+    }
+    .wp-icon {
+        color: $theme-primary;
+        margin-bottom: 20px;
+    }
+    h4 {
+        color: $theme-dark;
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+// Team Section
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+#team {
+    padding: 100px 0;
+}
+
+.team-intro {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.team-section-title {
+    color: $theme-primary;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-member {
+    padding: 25px 15px;
+    margin-bottom: 20px;
+    .team-avatar {
+        color: $theme-primary;
+        margin-bottom: 15px;
+    }
+    h4 {
+        color: $theme-dark;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .team-role {
+        color: $theme-primary;
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .team-affiliation {
+        color: #888;
+        font-size: 13px;
+        font-style: italic;
+    }
+}
+
+// Aside funding section
+aside.bg-dark {
+    .text-faded {
+        font-size: 15px;
+        line-height: 1.8;
+    }
 }
 
 // Extras
